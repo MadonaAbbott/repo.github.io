@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=”stylesheet” type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>BOOTSTRAP 2ND PRACTICE</title>
+  
+    <style>
+              /* Make the image fully responsive */
+ @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Galindo&family=Henny+Penny&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ body {
+  background-color: #29e7cd;
+background-image: linear-gradient(315deg, #29e7cd 0%, #fffbfc 74%);
+
+}
+
+ header {
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+ }
+
+ header h1 {
+  font-family: 'Henny Penny', cursive;
+  color: orange;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+
+ }
+
+ header p{
+  font-family: 'Galindo', cursive;
+   font-size: 25px;
+   display: flex;
+   justify-content: center;
+ }
+
+
+ .carousel-item {
+    height:40rem;
+    background: gray;
+    align-items: center; 
+ }
+ .carousel-caption {
+    padding-bottom: 3rem;
+ }
+ .carousel-caption a:hover{
+     color: red;
+ }
+
+
+ .blog-content h2 {
+  text-align: left;
+  padding-top: 3rem;
+  font-family: 'Henny Penny', cursive;
+  color: orange;
+  font-size: 50px;
+  display: flex;
+  justify-content: left;
+ 
+}
+
+.figure-caption {
+    text-decoration: none;
+    color:whitesmoke;
+    padding: 2rem;
+    background-color: hsla(211, 12%, 48%, 0.50);  
+    border: 1px;
+    font-family: 'Galindo', cursive;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
+.figure-img { 
+   display: grid;
+   width: 100%;
+   max-height: 400px;
+   column-gap: 20px;
+   margin-bottom: 0;
+}
+
+.footer-grid{
+  margin: 0;
+  justify-content: center;
+  padding-top: 20px;
+  
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-link li {
+    list-style: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 0.2rem;
+    font-size: 1rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color: orange;
+}
+
+</style>
+
+</head>
+<body>
+
+  <!--bootstrap nav bar start-->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="resources\images\madonazoologo.png" alt="" width="100" height="90">
+       </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Tickets</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Donate</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+     
+
+    <!--header start-->
+
+    <header>
+        <h1>Virginia Zoo</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio deserunt sequi <br>obcaecati magnam, explicabo, enim quo necessitatibus sapiente quisquam cum alias.</p>
+    </header>
+
+    <section class="Carousel"> 
+
+      <!--Bootstrap carousel start-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                    <img src="resources\images\indoorzoo.jpg" class="d-block w-100" alt="outdoor zoo">
+                    <div class="carousel-caption">
+                        <h1>Outdoor Zoo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rerum repudiandae quaerat veritatis fugiat ab quibusdam aliquid, consequuntur iure delectus?</p>
+                        <a href="#" class="btn btn-md btn-primary">Sign up here</a>
+                    </div>
+              </div>
+
+              <div class="carousel-item">
+                    <img src="resources\images\indoorzootrue.jpg" class="d-block w-100" alt="indoor zoo">
+                    <div class="carousel-caption">
+                        <h1>Outdoor Zoo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rerum repudiandae quaerat veritatis fugiat ab quibusdam aliquid, consequuntur iure delectus?</p>
+                        <a href="#" class="btn btn-md btn-success">Sign up here</a>
+                    </div>
+              </div>
+
+               <div class="carousel-item">
+                      <img src="resources\images\pettingzoo.jpg" class="d-block w-100" alt="petting zoo">
+                      <div class="carousel-caption">
+                        <h1>Outdoor Zoo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam rerum repudiandae quaerat veritatis fugiat ab quibusdam aliquid, consequuntur iure delectus?</p>
+                        <a href="#" class="btn btn-md btn-warning">Sign up here</a>
+                    </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-target="#carouselExampleIndicators" data-slide="next" type="button">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                 </button>
+          </div>
+    </section>
+    
+    <!--bootstrap grid start--> 
+    
+    <section class="grid">
+      <div class="blog-content">
+        <h2><font color="black">From the</font>&nbsp;Zoo Blog:</h2>
+      </div>
+
+      <div class="grid-container overflow-hidden"> 
+        <div class="row gx-5 justify-content-center">
+            <div class="col-xs-4">
+              <figure class="figure p-3">
+                <a href="resources\images\babygiraffe.jpg"><img src="resources\images\babygiraffe.jpg" class="figure-img img-fluid rounded" height="400px" width="500px" alt="A generic square placeholder image with rounded corners in a figure."></a>
+                <figcaption class="figure-caption text-center" id="caption"> A baby is born!<br>Help Name The Zoo's Baby Giraffe</figcaption>
+              </figure> 
+            </div>
+      
+            <div class="col-xs-4">
+              <figure class="figure p-3">
+                <a href="resources\images\birds.jpg"><img src="resources\images\birds.jpg" class="figure-img img-fluid rounded" height="400px" width="500px" alt="A generic square placeholder image with rounded corners in a figure."></a>
+                <figcaption class="figure-caption text-center" id="caption">Virginia Zoo Remove Birds From Habitats To <br> Protect Against Avian</figcaption>
+              </figure> 
+            </div>
+  
+            <div class="col-xs-4">
+              <figure class="figure p-3">
+                <a href="resources\images\koala.jpg"><img src="resources\images\koala.jpg" id="img-virginia" class="figure-img img-fluid rounded" height="400px" width="500px" alt="A generic square placeholder image with rounded corners in a figure."></a>
+                <figcaption class="figure-caption text-center" id="caption">Meet Henry the Koala: <br> A new member of the Virginia Zoo family</figcaption>
+              </figure> 
+            </div>
+        </div>
+      </div>
+    </section>  
+    
+
+  <footer class="footer-grid">
+      <div class="grid-container overflow-hidden"> 
+        <div class="row gx-5 justify-content-center">
+            <div class="footer-logo col-xs-4">
+              <a class="navbar-brand" href="#"><img src="resources\images\madonazoologo.png" alt="madona abbott logo" width="100" height="90">
+            </div>
+            <div class="social-media-icons col-xs-4 p-3">
+                   <ul class="footer-social-link">
+                     <li>
+                      <a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                     </li>
+                     <li>
+                       <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                     </li>
+                     <li>
+                       <a href="#" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                     </li>
+                     <li>
+                       <a href="#" target="_blank"><ion-icon name="logo-google"></ion-icon></a>
+                     </li>
+                     <li>
+                       <a href="#" target="_blank"><ion-icon name="logo-skype"></ion-icon></a>
+                     </li>
+                   </ul>
+            </div>
+            <div class="footer-email col-xs-4">
+              <div class="p-3">
+                <p>GET ZOO NEWS, UPDATES & <br>DISCOUNTS</p>
+                <form id="subscribe-form" class="validate" action="#" method="post" name="subscribe-form" target="_blank">
+                  <input type="text" name="first-text-field" placeholder="type here">
+                </form>
+              </div>
+            </div>
+            <div class="footer-info col-xs-4">
+              <div class="p-3">
+                <p>Open daily from 9am-4pm <br> Address: 2500 Granby St <br>Norfolk, VA 23504 </p> 
+              </div>
+             </div>
+        </div>
+      </div>
+   </footer>
+   <br>
+   <br>
+  <div class="copyright">
+  <p> © 2022 GENERATIONUSA PROJECT. DEVELOPED BY MADONA ABBOTT JWD STUDENT</p>
+  </div>
+
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
